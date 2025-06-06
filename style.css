@@ -1,0 +1,105 @@
+/* style.css for GHD Build Co. - custom tweaks and improvements */
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f8fafc; /* Tailwind's slate-50 */
+  font-family: 'Inter', Arial, sans-serif;
+}
+a {
+  transition: color 0.15s;
+}
+
+/* Navbar */
+header {
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+}
+nav a {
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+nav a.active,
+nav a:hover {
+  color: #fb923c !important; /* Tailwind orange-400 */
+}
+
+/* Buttons */
+.btn,
+.bg-orange-500 {
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+  box-shadow: 0 4px 16px rgba(251,146,60,0.07);
+  font-weight: 600;
+}
+.btn:hover,
+.bg-orange-500:hover {
+  background: #ea580c !important; /* Tailwind orange-600 */
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 800;
+  color: #1e293b; /* slate-800 */
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  margin-bottom: 0.75em;
+}
+h3 {
+  font-weight: 700;
+}
+
+/* Card/Block Sections */
+section, .card, .faq {
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0 2px 16px rgba(30,41,59,0.04);
+}
+
+/* Image tweaks */
+img.rounded-full {
+  box-shadow: 0 2px 12px rgba(30,41,59,0.10);
+  background: #fff;
+}
+
+img[alt*="logo"] {
+  background: #fff;
+  border-radius: 100vw;
+  box-shadow: 0 2px 18px rgba(251,146,60,0.14);
+  padding: 0.35em;
+}
+
+img[alt*="Instagram"], img[alt*="Facebook"] {
+  filter: grayscale(0.35) brightness(1.1);
+  opacity: 0.85;
+  transition: filter 0.2s, opacity 0.2s;
+}
+img[alt*="Instagram"]:hover, img[alt*="Facebook"]:hover {
+  filter: none;
+  opacity: 1;
+}
+
+/* Testimonial quotes */
+blockquote {
+  font-size: 1.08rem;
+  color: #0f172a;
+  background: #fffbeb;
+  border-left: 4px solid #fb923c;
+  padding: 0.8em 1.1em;
+  border-radius: 0.75em;
+  margin: 1.5em 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  nav { font-size: 1rem; }
+  main { padding-left: 1rem; padding-right: 1rem; }
+  h1 { font-size: 2rem; }
+  .w-64, .h-64 { width: 8rem !important; height: 8rem !important; }
+}
+
+/* Utility tweaks */
+.bg-white { background: #fff !important; }
+.shadow-lg { box-shadow: 0 8px 32px rgba(30,41,59,0.12) !important; }
