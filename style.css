@@ -43,12 +43,17 @@ h1, h2, h3 {
   color: #1e293b; /* slate-800 */
   letter-spacing: -0.03em;
 }
-
 h2 {
   margin-bottom: 0.75em;
 }
 h3 {
   font-weight: 700;
+}
+
+/* Hero Headline: High Contrast */
+.hero-contrast, .hero-contrast h1, .hero-contrast h2 {
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.22);
 }
 
 /* Card/Block Sections */
@@ -63,14 +68,12 @@ img.rounded-full {
   box-shadow: 0 2px 12px rgba(30,41,59,0.10);
   background: #fff;
 }
-
 img[alt*="logo"] {
   background: #fff;
   border-radius: 100vw;
   box-shadow: 0 2px 18px rgba(251,146,60,0.14);
   padding: 0.35em;
 }
-
 img[alt*="Instagram"], img[alt*="Facebook"] {
   filter: grayscale(0.35) brightness(1.1);
   opacity: 0.85;
@@ -103,3 +106,8 @@ blockquote {
 /* Utility tweaks */
 .bg-white { background: #fff !important; }
 .shadow-lg { box-shadow: 0 8px 32px rgba(30,41,59,0.12) !important; }
+
+/* (Optionally, if you want to hide trust logos at bottom via CSS instead of deleting from HTML) */
+footer .flex.justify-center.gap-2.mb-2 {
+  display: none !important;
+}

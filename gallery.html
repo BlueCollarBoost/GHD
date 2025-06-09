@@ -1,24 +1,14 @@
-<!-- gallery.html (Enhanced for GHD Build Co.) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GHD Build Co.</title>
+  <title>Project Gallery | GHD Build Co.</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VR3237T1BX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VR3237T1BX');
-</script>
-<body class="font-[Inter] text-gray-800">
+<body class="font-[Inter] text-gray-800 bg-gray-50">
   <!-- Navbar -->
   <header class="bg-gray-900 text-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -29,79 +19,64 @@
       <nav class="space-x-6">
         <a href="index.html" class="hover:text-orange-400">Home</a>
         <a href="services.html" class="hover:text-orange-400">Services</a>
-        <a href="gallery.html" class="hover:text-orange-400">Gallery</a>
+        <a href="gallery.html" class="hover:text-orange-400 font-bold underline">Gallery</a>
         <a href="blog.html" class="hover:text-orange-400">Blog</a>
         <a href="contact.html" class="hover:text-orange-400">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="py-16 px-6 max-w-5xl mx-auto">
-    <h1 class="text-3xl font-bold text-center mb-10">Project Gallery</h1>
-    <p class="text-center max-w-xl mx-auto mb-8 text-lg">Real results from Windsor-Essex. Every photo below is GHD Build Co. work — see what our crew can do.</p>
-
-    <section class="grid md:grid-cols-3 gap-8 mb-14">
-      <!-- Replace srcs with real client/project images -->
-      <figure>
-        <img src="images/sample_deck1.jpg" alt="Custom backyard deck" class="w-full h-48 object-cover rounded shadow">
-        <figcaption class="mt-2 text-sm text-center text-gray-700">Pressure-treated deck, East Windsor (2024)</figcaption>
-      </figure>
-      <figure>
-        <img src="images/sample_trim.jpg" alt="Finish carpentry" class="w-full h-48 object-cover rounded shadow">
-        <figcaption class="mt-2 text-sm text-center text-gray-700">Custom trim work, Lakeshore</figcaption>
-      </figure>
-      <figure>
-        <img src="images/sample_basement_after.jpg" alt="Basement remodel" class="w-full h-48 object-cover rounded shadow">
-        <figcaption class="mt-2 text-sm text-center text-gray-700">Basement reno, South Windsor</figcaption>
-      </figure>
-      <figure>
-        <img src="images/sample_fence.jpg" alt="Fence project" class="w-full h-48 object-cover rounded shadow">
-        <figcaption class="mt-2 text-sm text-center text-gray-700">Privacy fence, Tecumseh</figcaption>
-      </figure>
-      <figure>
-        <img src="images/sample_kitchen.jpg" alt="Kitchen remodel" class="w-full h-48 object-cover rounded shadow">
-        <figcaption class="mt-2 text-sm text-center text-gray-700">Kitchen reno, Windsor</figcaption>
-      </figure>
-      <figure>
-        <img src="images/sample_reno_tips.jpg" alt="Laundry room update" class="w-full h-48 object-cover rounded shadow">
-        <figcaption class="mt-2 text-sm text-center text-gray-700">Laundry room upgrade, Amherstburg</figcaption>
-      </figure>
-    </section>
-
-    <div class="text-center mb-10">
-      <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded font-semibold">Book Your Project</a>
-      <p class="mt-3 text-gray-700">Want references for a specific job? <a href="contact.html" class="text-orange-600 underline">Just ask!</a></p>
+  <main class="py-14 px-4 max-w-6xl mx-auto">
+    <h1 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900">Project Gallery</h1>
+    <p class="text-center max-w-2xl mx-auto mb-10 text-lg text-gray-700">
+      No stock photos—just real results from Windsor-Essex. Here’s what you get with GHD Build Co.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+      <!-- Kitchen -->
+      <img src="images/kitchen before.jpeg" alt="Kitchen renovation before" class="rounded-xl shadow-lg object-cover w-full h-64 hover:scale-105 transition-transform duration-200 bg-white">
+      <img src="images/big kitchen no appliance.jpeg" alt="Kitchen after renovation" class="rounded-xl shadow-lg object-cover w-full h-64 hover:scale-105 transition-transform duration-200 bg-white">
+      <!-- Bathrooms -->
+      <img src="images/bathroom before.jpeg" alt="Bathroom renovation before" class="rounded-xl shadow-lg object-cover w-full h-64 hover:scale-105 transition-transform duration-200 bg-white">
+      <img src="images/bathroom low.jpeg" alt="Bathroom after renovation" class="rounded-xl shadow-lg object-cover w-full h-64 hover:scale-105 transition-transform duration-200 bg-white">
+      <img src="images/small bathroom.jpeg" alt="Small bathroom project" class="rounded-xl shadow-lg object-cover w-full h-64 hover:scale-105 transition-transform duration-200 bg-white">
+      <!-- Cabinets/Closets -->
+      <img src="images/cabinet close.jpeg" alt="Cabinet close-up" class="rounded-xl shadow-lg object-cover w-full h-64 hover:scale-105 transition-transform duration-200 bg-white">
+      <img src="images/cabinet open.jpeg" alt="Cabinet open" class="rounded-xl shadow-lg object-cover w-full h-64 hover:scale-105 transition-transform duration-200 bg-white">
+      <img src="images/closet 2.jpeg" alt="Closet" class="rounded-xl shadow-lg object-cover w-full h-64 hover:scale-105 transition-transform duration-200 bg-white">
+      <img src="images/closet close.jpeg" alt="Closet close-up" class="rounded-xl shadow-lg object-cover w-full h-64 hover:scale-105 transition-transform duration-200 bg-white">
+      <img src="images/closet open.jpeg" alt="Closet open" class="rounded-xl shadow-lg object-cover w-full h-64 hover:scale-105 transition-transform duration-200 bg-white">
+      <!-- Trim/Windows -->
+      <img src="images/window trim close.jpeg" alt="Window trim close-up" class="rounded-xl shadow-lg object-cover w-full h-64 hover:scale-105 transition-transform duration-200 bg-white">
+      <img src="images/window trim far.jpeg" alt="Window trim full view" class="rounded-xl shadow-lg object-cover w-full h-64 hover:scale-105 transition-transform duration-200 bg-white">
     </div>
-
-    <div class="text-center">
+    <div class="text-center mt-12">
+      <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded font-semibold shadow">Book Your Project</a>
+      <p class="mt-3 text-gray-700">Want to see more or get a specific reference? <a href="contact.html" class="text-orange-600 underline">Just ask!</a></p>
+    </div>
+    <div class="text-center mt-6">
       <a href="index.html" class="text-orange-600 underline font-semibold">← Back to Home</a>
     </div>
   </main>
 
   <footer class="bg-gray-900 text-white py-10 px-6 text-center mt-16">
-  <div class="mb-2 flex flex-wrap justify-center gap-4">
-    <a href="mailto:ghdbuildco@gmail.com" class="underline hover:text-orange-400">ghdbuildco@gmail.com</a>
-    <a href="tel:5199652729" class="underline hover:text-orange-400">519-965-2729</a>
-    <span>Mon–Sat 8am–6pm</span>
-  </div>
-  <div class="mb-2 flex justify-center gap-4">
-    <!-- Social Icons -->
-    <a href="https://www.instagram.com/ghdbuildco" target="_blank" rel="noopener" class="hover:text-orange-400" aria-label="Instagram">
-      <img src="images/instagram.svg" alt="Instagram" class="h-6 inline">
-    </a>
-    <a href="https://www.facebook.com/profile.php?id=61576723995397" target="_blank" rel="noopener" class="hover:text-orange-400" aria-label="Facebook">
-      <img src="images/facebook.svg" alt="Facebook" class="h-6 inline">
-    </a>
-  </div>
-  <div class="mb-2">
-    <span class="text-sm text-gray-300">Serving Windsor, Essex County & area</span>
-  </div>
-  <div class="flex justify-center gap-2 mb-2">
-    <a href="#" class="hover:text-orange-400"><img src="images/google.png" alt="Google logo" class="h-6 inline"></a>
-    <a href="#" class="hover:text-orange-400"><img src="images/houzz.png" alt="Houzz logo" class="h-6 inline"></a>
-    <a href="#" class="hover:text-orange-400"><img src="images/homestars.png" alt="HomeStars logo" class="h-6 inline"></a>
-  </div>
-  <p class="text-xs text-gray-400">&copy; 2025 GHD Build Co. | All Rights Reserved.</p>
-</footer>
+    <div class="mb-2 flex flex-wrap justify-center gap-4">
+      <a href="mailto:team@ghdbuild.ca" class="underline hover:text-orange-400">team@ghdbuild.ca</a>
+      <a href="tel:5199652729" class="underline hover:text-orange-400">519-965-2729</a>
+      <span>Mon–Sat 8am–6pm</span>
+    </div>
+    <div class="mb-2 flex justify-center gap-4">
+      <!-- Social Icons -->
+      <a href="https://www.instagram.com/ghdbuildco" target="_blank" rel="noopener" class="hover:text-orange-400" aria-label="Instagram">
+        <img src="images/instagram.svg" alt="Instagram" class="h-6 inline">
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61576723995397" target="_blank" rel="noopener" class="hover:text-orange-400" aria-label="Facebook">
+        <img src="images/facebook.svg" alt="Facebook" class="h-6 inline">
+      </a>
+    </div>
+    <div class="mb-2">
+      <span class="text-sm text-gray-300">Serving Windsor, Essex County & area</span>
+    </div>
+    <p class="text-xs text-gray-400">&copy; 2025 GHD Build Co. | All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
